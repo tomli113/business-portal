@@ -4,22 +4,26 @@
 $vm={}; $VmAPI={};
 $(document).ready(function(){
     //--------------------------------------------------------
-    document.title="Woolcock Institute of Medical Research";
-    //--------------------------------------------------------
+    $vm.repository="";
+    $vm.library_path='https://cbs.wappsystem.com/dev/github';
     if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
         $vm.repository      ="tomli113/business-portal";
-        $vm.hosting_path    =window.location.protocol+'//'+window.location.host+'/'+$vm.repository;
+        $vm.hosting_path    =window.location.protocol+'//'+window.location.host+"/vmiis/business-portal";
         $vm.library_path    =window.location.protocol+'//'+window.location.host;
         $vm.debug		    =true;
     }
-    else{
-        $vm.repository      ="business-portal";
-        $vm.hosting_path    ="https://tomli113.github.io/"+$vm.repository;
-        $vm.library_path    ='https://cbs.wappsystem.com/dev/github';
+    else if (window.location.hostname.indexOf('cbs.wappsystem.com')!=-1){
+	$vm.hosting_path="https://cbs.wappsystem.com/dev/github/vmiis/business-portal";
+    }
+    else if (window.location.hostname.indexOf('www.tomliweb.com')!=-1){
+	$vm.hosting_path="//www.tomliweb.com";
+    }
+    else if (window.location.hostname.indexOf('github.io')!=-1){
+	$vm.hosting_path="https://tomli113.github.io/business-portal";
     }
     //--------------------------------------------------------
-    $vm.server		        ="production";
-    $VmAPI.api_base	        ="https://cbs.wappsystem.com/pro/";
+    $vm.server		    ="production";
+    $VmAPI.api_base	    ="https://cbs.wappsystem.com/pro/";
     $vm.debug_message	    =true;
     //--------------------------------------------------------
 	var start=function(){
