@@ -25,8 +25,11 @@ $(document).ready(function(){
     $vm.server		    ="production";
     $VmAPI.api_base	    ="https://cbs.wappsystem.com/pro/";
     $vm.debug_message	    =true;
+    if(window.location.toString().indexOf('db=woolcock')!=-1){
+	$VmAPI.api_base	    ="https://rt.woolcock.org.au/";
+    }
     //--------------------------------------------------------
-	var start=function(){
+    var start=function(){
 		$vm.version=new Date().getTime().toString();
 		var url=$vm.url('__HOST__/version.html?_=')+$vm.version;
 		if(window.location.toString().indexOf('debug=1')==-1){
@@ -36,8 +39,8 @@ $(document).ready(function(){
 		else{
 		    load_vmapi();
 		}
-	}
-	//--------------------------------------------------------
+    }
+    //--------------------------------------------------------
     var load_vmapi   =function(){ load_js($vm.url('__LIB__/vmiis/VmAPI/distribution/vmapi.min.js'),load_vm);	}
     var load_vm      =function(){ load_js($vm.url('__LIB__/vmiis/VmFramework/distribution/vmframework.min.js'),init);}
     var init         =function(){ $vm.init({callback:function(){$vm.load_first_module({url:$vm.hosting_path+'/layout.html'}); last();  }});	}
