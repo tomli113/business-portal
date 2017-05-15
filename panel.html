@@ -34,6 +34,13 @@
                 module_tid      :'20010702',
                 query_tid       :'20010703',
             }
+            if(window.location.toString().indexOf('api=woolcock')!=-1){
+                v={
+                    app_id:_app_id,
+                    module_tid      :'20010434',
+                    query_tid       :'20010437',
+                }
+	        }
             //---------------------------------------------
             L[A+'module']        ={table_id:v.module_tid,       var:v,     url:M+'/portal/module.html'};
             L[A+'query']         ={table_id:v.query_tid,        var:v,     url:M+'/portal/query.html',form_module:A+'query_form'};
@@ -47,7 +54,8 @@
         _set_li_permissions();
         //---------------------------------------------
         $('#D__ID').on('load',function(){
-            _nav_name='Woolcock Business Portal';
+            _nav_name='Business Portal';
+            if(window.location.toString().indexOf('db=woolcock')!=-1)   _nav_name='Business Portal (Woolcock)';
             _set_nav_link();
         });
         //---------------------------------------------
