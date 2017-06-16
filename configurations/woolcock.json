@@ -1,0 +1,69 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+		"url":"https://vmiis.github.io/modules/panels/main.html",
+		"name":"Car Booking",
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Personnal",
+						"tasks":
+						[
+							{
+								"module_id":"my_information",
+								"name":"My Information",
+								"table_id":"20007566",
+								"url":"https://tomli113.github.io/modules/personal/my_information.html"
+							},
+							{
+								"module_id":"m002",
+								"name":"Contact List",
+								"table_id":"20007198",
+								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
+							},
+							{
+								"module_id":"daily",
+								"name":"Car booking daily calendar",
+								"table_id":"20000908",
+								"url":"https://vmiis.github.io/modules/car_booking/daily.html"
+							}
+						]
+					},
+					{
+						"name":"Booking records",
+						"tasks":
+						[
+							{
+								"module_id":"booking_record",
+								"name":"Car booking records",
+								"table_id":"20000908",
+								"url":"https://vmiis.github.io/modules/car_booking/booking_record.html"
+							}
+						]
+					},
+					{
+						"name":"Setup",
+						"tasks":
+						[
+							{
+								"module_id":"car",
+								"name":"Add/Remove cars",
+								"table_id":"20000906",
+								"url":"https://vmiis.github.io/modules/car_booking/car.html"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+	}
+}

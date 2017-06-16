@@ -3,75 +3,126 @@
 <script>
 $vm={}; $VmAPI={};
 $(document).ready(function(){
-    //--------------------------------------------------------
-    $vm.repository="";
-    $vm.library_path='https://cbs.wappsystem.com/dev/github';
-    if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
-        $vm.repository      ="tomli113/business-portal";
-        $vm.hosting_path    =window.location.protocol+'//'+window.location.host+"/vmiis/business-portal";
-        $vm.library_path    =window.location.protocol+'//'+window.location.host;
-        $vm.debug		    =true;
-    }
-    else if (window.location.hostname.indexOf('cbs.wappsystem.com')!=-1){
-	$vm.hosting_path="https://cbs.wappsystem.com/dev/github/vmiis/business-portal";
-    }
-    else if (window.location.hostname.indexOf('www.tomliweb.com')!=-1){
-	$vm.hosting_path="//www.tomliweb.com";
-    }
-    else if (window.location.hostname.indexOf('github.io')!=-1){
-	$vm.hosting_path="//tomli113.github.io/business-portal";
-    }
-    //--------------------------------------------------------
-    $vm.server		    ="production";
-    $VmAPI.api_base	    ="https://cbs.wappsystem.com/pro/";
-    $vm.debug_message	    =true;
-    if(window.location.toString().indexOf('db=woolcock')!=-1){
-	$VmAPI.api_base	    ="https://rt.woolcock.org.au/";
-    }
-    //--------------------------------------------------------
-    var start=function(){
-		$vm.version=new Date().getTime().toString();
-		var url=$vm.url('__HOST__/version.html?_=')+$vm.version;
-		if(window.location.toString().indexOf('debug=1')==-1){
-		    if($vm.debug_message===true) console.log('load module from '+url);
-		    $.get(url,function(new_ver){ $vm.version=new_ver.trim(); load_vmapi();},'text')
+	//--------------------------------------------------------
+	var href = window.location.href.split('?')[0];
+	var path=href.split('/index.html')[0];
+	var lastChar=path[path.length-1];
+	if(lastChar=='/') path=path.substring(0,path.length-1);
+	$vm.hosting_path=path;
+	if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost') $vm.debug=true;
+	//--------------------------------------------------------
+	var start=function(){
+		$vm.reload='';
+		if(window.location.toString().indexOf('reload=1')!=-1){
+			$vm.reload=new Date().getTime().toString();
+		}
+		var url=$vm.hosting_path+'/version.html?_='+new Date().getTime().toString();
+		if($vm.debug_message===true) console.log('load module from '+url);
+		$.get(url,function(new_ver){ $vm.version=new_ver.trim(); load_config();},'text')
+	}
+	//--------------------------------------------------------
+	var load_config=function(){
+		//*******************************************************************************************************
+		var url=$vm.hosting_path+'/index.json';
+		//*******************************************************************************************************
+		var ver=localStorage.getItem(url+"_ver");
+		var txt=localStorage.getItem(url+"_txt");
+		//------------------------------------------
+		if(ver!=$vm.version || txt===null || $vm.debug===true || $vm.reload!=''){
+			console.log('load config from '+url+'?_='+$vm.version+$vm.reload);
+			$.get(url+'?_='+$vm.version+$vm.reload,function(data){
+				localStorage.setItem(url+"_txt",data);
+				localStorage.setItem(url+"_ver",$vm.version);
+				app_init(data);
+			},'text').fail(function() {
+				alert( "The configuration file ("+url+")doesn't exist!" );
+			});
+		}
+		else{ app_init(txt); }
+		//------------------------------------------
+	}
+	//--------------------------------------------------------
+	var app_init=function(txt){
+		var text=$('<div/>').html(txt).text();
+		//---------------------------
+		var config;
+		try{
+			config=JSON.parse(text);
+		}
+		catch (e){
+			alert("Error in app config file\n"+e);
+			return;
+		}
+		//--------------------------------------------------------
+		$vm.app_config=config;
+		//--------------------------------------------------------
+		$vm.library_path=config.library_path;
+		$vm.parts_path=config.parts_path;
+		$vm.image_path=config.image_path;
+		if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
+			$vm.library_path =window.location.protocol+'//'+window.location.host;
+		}
+		//--------------------------------------------------------
+		$vm.server          =config.server;
+		$VmAPI.api_base     =config.api_path;
+		$vm.debug_message   =true;
+		//--------------------------------------------------------
+		$vm.config_list={}
+		//--------------------------------------------------------
+		load_vmapi();
+	}
+	//--------------------------------------------------------
+	var load_vmapi   =function(){ load_js($vm.url('https://vmiis.github.io/api/distribution/vmapi.min.js'),load_vm);	}
+	var load_vm      =function(){ load_js($vm.url('https://vmiis.github.io/framework/distribution/vmframework.min.js'),init);}
+	var init         =function(){ $vm.init({callback:function(){$vm.load_first_module({url:$vm.hosting_path+'/layout.html'}); last();  }});	}
+	//--------------------------------------------------------
+	var load_js=function(url,next){
+		var ver=localStorage.getItem(url+"_ver");
+		var txt=localStorage.getItem(url+"_txt");
+		//------------------------------------------
+		if(ver!=$vm.version || txt===null || $vm.debug===true || $vm.reload!=''){
+			if($vm.debug_message===true) console.log('load library from '+url+'?_='+$vm.version+$vm.reload);
+			$.get(url+'?_='+$vm.version+$vm.reload,function(data){
+				localStorage.setItem(url+"_txt",data);
+				localStorage.setItem(url+"_ver",$vm.version);
+				$('head').append('<scr'+'ipt>'+data+'</scr'+'ipt>');
+				next();
+			},'text');
+		}
+		else{ $('head').append('<scr'+'ipt>'+txt+'</scr'+'ipt>'); next(); }
+		//------------------------------------------
+	}
+	//--------------------------------------------------------
+	$vm.url=function(text){
+		text=text.replace(/__BASE__\//g,$vm.library_path+'/');
+		text=text.replace(/__LIB__\//g,$vm.library_path+'/');
+		text=text.replace(/__HOST__\//g,$vm.hosting_path+'/');
+		text=text.replace(/__VER__/g,$vm.version);
+		text=text.replace(/__PARTS__\//g,$vm.parts_path+'/');
+		text=text.replace(/__IMAGE__\//g,$vm.image_path+'/');
+		if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
+			//---------------------
+			//for json
+			text=text.replace(/http:\/\/www.tomliweb.com/g,window.location.protocol+'//'+window.location.host+'/tomli113/business-portal');
+			//---------------------
+			text=text.replace(/https:\/\/vmiis.github.io/g,window.location.protocol+'//'+window.location.host+'/vmiis');
+			text=text.replace(/https:\/\/wappsystem.github.io/g,window.location.protocol+'//'+window.location.host+'/wappsystem');
+			text=text.replace(/https:\/\/woolcock-imr.github.io/g,window.location.protocol+'//'+window.location.host+'/woolcock-imr');
+			text=text.replace(/https:\/\/rt.woolcock.org.au\/github\/woolcock-imr/g,window.location.protocol+'//'+window.location.host+'/woolcock-imr');
+			text=text.replace(/https:\/\/cbs.wappsystem.com\/dev\/github/g,window.location.protocol+'//'+window.location.host);
+			text=text.replace(/https:\/\/image.datalinkedin.com/g,window.location.protocol+'//'+window.location.host+'/vmiis/images');
+			text=text.replace(/https:\/\/tomli113.github.io\/business-portal/g,$vm.hosting_path);
 		}
 		else{
-		    load_vmapi();
+			text=text.replace(/http:\/\/tomli113.github.io\/business-portal/g,'http://www.tomliweb.com');
+			text=text.replace(/https:\/\/vmiis.github.io\/business-portal/g,'https://www.datalinkedin.com');
+			text=text.replace(/https:\/\/wappsystem.github.io\/business-portal/g,'https://www.vmiis.com');
 		}
-    }
-    //--------------------------------------------------------
-    var load_vmapi   =function(){ load_js($vm.url('__LIB__/vmiis/VmAPI/distribution/vmapi.min.js'),load_vm);	}
-    var load_vm      =function(){ load_js($vm.url('__LIB__/vmiis/VmFramework/distribution/vmframework.min.js'),init);}
-    var init         =function(){ $vm.init({callback:function(){$vm.load_first_module({url:$vm.hosting_path+'/layout.html'}); last();  }});	}
-    //--------------------------------------------------------
-    var load_js=function(url,next){
-	    var ver=localStorage.getItem(url+"_ver");
-	    var txt=localStorage.getItem(url+"_txt");
-	    //------------------------------------------
-	    if(ver!=$vm.version || txt===null || $vm.debug===true){
-                if($vm.debug_message===true) console.log('load module from '+url);
-                    $.get(url+'?_='+$vm.version,function(data){
-                    localStorage.setItem(url+"_txt",data);
-                    localStorage.setItem(url+"_ver",$vm.version);
-    		    $('head').append('<scr'+'ipt>'+data+'</scr'+'ipt>');
-                    next();
-	        },'text');
-            }
-            else{ $('head').append('<scr'+'ipt>'+txt+'</scr'+'ipt>'); next(); }
-            //------------------------------------------
-    }
-    //--------------------------------------------------------
-    $vm.url=function(text){
-        var re0=new RegExp('__BASE__/', 'g');  text=text.replace(re0,$vm.library_path+'/');
-        var re1=new RegExp('__LIB__/', 'g');   text=text.replace(re1,$vm.library_path+'/');
-	var re2=new RegExp('__HOST__/', 'g');  text=text.replace(re2,$vm.hosting_path+'/');
-	var re3=new RegExp('__VER__', 'g');    text=text.replace(re3,$vm.version);
-	return text;
-    }
-    //--------------------------------------------------------
-    start();
-    //--------------------------------------------------------
+		return text;
+	}
+	//--------------------------------------------------------
+	start();
+	//--------------------------------------------------------
 });
 $vm.module_list={}
 var jsN=0;
@@ -88,13 +139,12 @@ var last=function(){
         });
         $('head').append("<link rel='stylesheet' href='https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/redmond/jquery-ui.css'>");
     }, 300);
-
 }
 //--------------------------------------------------------
 var last_last=function(){
     jsN++;
     if(jsN===3){
-        $vm.check_and_clear_localstorage();
+		$vm.check_and_clear_localstorage();
         //-------------------------------------
         $vm.module_list['alert_dialog_module']={table_id:'--------',url:'__LIB__/vmiis/Common-Code/dialog/alert_dialog_module.html'};
         $vm.load_module_by_name('alert_dialog_module','',{})
@@ -108,7 +158,7 @@ var last_last=function(){
         $vm.ready=1;
         //-------------------------------------
     }
-    $vm.trust_path=['https://tomli113.github.io/modules','https://vmiis.github.io/modules'];
+	$vm.trust_path=['https://tomli113.github.io','https://vmiis.github.io','https://woolcock-imr.github.io','https://wappsystem.github.io','https://cbs.wappsystem.com','https://rt.woolcock.org.au','https://codepen.io/vmiis'];
 }
 //--------------------------------------------------------
 </script>

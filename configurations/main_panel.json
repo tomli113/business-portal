@@ -20,14 +20,26 @@
 								{
 									"module_id":"application",
 									"name":"Applications",
-									"table_id":"20010729",
+									"table_id":"20010737",
 									"url":"https://vmiis.github.io/modules/portal/application.html"
 								},
 								{
 									"module_id":"query",
 									"name":"Queries",
-									"table_id":"20010430",
-									"url":"https://vmiis.github.io/modules/portal/query.html"
+									"table_id":"20010703",
+									"url":"https://vmiis.github.io/modules/portal/query.html",
+									"form_module":"query_form"
+								},
+								{
+									"module_id":"query_form",
+									"table_id":"20010703",
+									"url":"https://vmiis.github.io/modules/portal/query.form.html"
+								},
+								{
+									"module_id":"import_and_export",
+									"name":"Import and export",
+									"table_id":"",
+									"url":"https://vmiis.github.io/modules/portal/import_and_export.html"
 								}
 							]
 						}
