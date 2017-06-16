@@ -30,10 +30,10 @@
 								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
 							},
 							{
-								"module_id":"daily",
-								"name":"Car booking daily calendar",
-								"table_id":"20000908",
-								"url":"https://vmiis.github.io/modules/car_booking/daily.html"
+								"module_id":"m003",
+								"name":"bank_transaction",
+								"table_id":"20007307",
+								"url":"https://tomli113.github.io/modules/personal/bank_transaction.html"
 							}
 						]
 					},
