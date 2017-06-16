@@ -36,13 +36,13 @@
 								"url":"https://tomli113.github.io/modules/personal/bank_transaction.html"
 							},
 									{
-								"module_id":"m004",
+								"module_id":"kangdinglu_category",
 								"name":"kangdinglu_category",
 								"table_id":"20008529",
 								"url":"https://tomli113.github.io/modules/personal/kangdinglu_category.html"
 							},
 							{
-								"module_id":"m005",
+								"module_id":"kangdinglu_file",
 								"name":"kangdinglu_file",
 								"table_id":"20008528",
 								"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
