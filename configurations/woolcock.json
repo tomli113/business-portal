@@ -7,45 +7,57 @@
 		"main_panel" :
 		{
 		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Car Booking",
+		"name":"Woolcock Management",
 		"columns":
 		[
 			{
 				"sections":
 				[
 					{
-						"name":"Personnal",
+				"name":"Woolcock",
 						"tasks":
 						[
 							{
-								"module_id":"my_information",
-								"name":"My Information",
-								"table_id":"20007566",
-								"url":"https://tomli113.github.io/modules/personal/my_information.html"
+								"module_id":"nas_details",
+								"name":"NAS",
+								"table_id":"20007408",
+								"url":"https://tomli113.github.io/modules/woolcock/nas_details.html"
 							},
 							{
-								"module_id":"m002",
-								"name":"Contact List",
+								"module_id":"pc_details",
+								"name":"Computers",
 								"table_id":"20007198",
-								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
+								"url":"https://tomli113.github.io/modules/woolcock/pc_details.html"
 							},
 							{
-								"module_id":"daily",
-								"name":"Car booking daily calendar",
-								"table_id":"20000908",
-								"url":"https://vmiis.github.io/modules/car_booking/daily.html"
-							}
-						]
-					},
-					{
-						"name":"Booking records",
-						"tasks":
-						[
+								"module_id":"printer_details",
+								"name":"Printers",
+								"table_id":"20007253",
+								"url":"https://tomli113.github.io/modules/woolcock/printer_details.html"
+							},
 							{
-								"module_id":"booking_record",
-								"name":"Car booking records",
-								"table_id":"20000908",
-								"url":"https://vmiis.github.io/modules/car_booking/booking_record.html"
+								"module_id":"tom_knowledge_base",
+								"name":"Tom Knowledge Base",
+								"table_id":"20004154",
+								"url":"https://tomli113.github.io/modules/woolcock/tom_knowledge_base.html"
+							},
+							{
+								"module_id":"unikey_details",
+								"name":"Unikeys",
+								"table_id":"20007408",
+								"url":"https://tomli113.github.io/modules/woolcock/unikey_details.html"
+							},
+							{
+								"module_id":"woolcock_category",
+								"name":"woolcock_category",
+								"table_id":"20008369",
+								"url":"https://tomli113.github.io/modules/woolcock/woolcock_category.html"
+							},
+							{
+								"module_id":"woolcock_document",
+								"name":"woolcock_document",
+								"table_id":"20007241",
+								"url":"https://tomli113.github.io/modules/woolcock/woolcock_document.html"
 							}
 						]
 					},
