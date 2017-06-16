@@ -18,7 +18,7 @@
 						"tasks":
 						[
 							{
-								"module_id":"my_information",
+								"module_id":"m001",
 								"name":"My Information",
 								"table_id":"20007566",
 								"url":"https://tomli113.github.io/modules/personal/my_information.html"
@@ -34,6 +34,30 @@
 								"name":"bank_transaction",
 								"table_id":"20007307",
 								"url":"https://tomli113.github.io/modules/personal/bank_transaction.html"
+							},
+									{
+								"module_id":"m004",
+								"name":"kangdinglu_category",
+								"table_id":"20008529",
+								"url":"https://tomli113.github.io/modules/personal/kangdinglu_category.html"
+							},
+							{
+								"module_id":"m005",
+								"name":"kangdinglu_file",
+								"table_id":"20008528",
+								"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
+							},
+							{
+								"module_id":"m006",
+								"name":"spend_records",
+								"table_id":"20004783",
+								"url":"https://tomli113.github.io/modules/personal/spend_records.html"
+							},
+							{
+								"module_id":"m007",
+								"name":"travel_cost",
+								"table_id":"20007241",
+								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
 							}
 						]
 					},
