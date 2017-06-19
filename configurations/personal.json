@@ -59,31 +59,7 @@
 								"table_id":"20007241",
 								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
 							}
-						]
-					},
-					{
-						"name":"Booking records",
-						"tasks":
-						[
-							{
-								"module_id":"booking_record",
-								"name":"Car booking records",
-								"table_id":"20000908",
-								"url":"https://vmiis.github.io/modules/car_booking/booking_record.html"
-							}
-						]
-					},
-					{
-						"name":"Setup",
-						"tasks":
-						[
-							{
-								"module_id":"car",
-								"name":"Add/Remove cars",
-								"table_id":"20000906",
-								"url":"https://vmiis.github.io/modules/car_booking/car.html"
-							}
-						]
+					
 					}
 				]
 			}
