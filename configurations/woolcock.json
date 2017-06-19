@@ -44,7 +44,7 @@
 							{
 								"module_id":"unikey_details",
 								"name":"Unikeys",
-								"table_id":"20007408",
+								"table_id":"20007426",
 								"url":"https://tomli113.github.io/modules/woolcock/unikey_details.html"
 							},
 							{
@@ -59,18 +59,7 @@
 								"table_id":"20007241",
 								"url":"https://tomli113.github.io/modules/woolcock/woolcock_document.html"
 							}
-						]
-					},
-					{
-						"name":"Setup",
-						"tasks":
-						[
-							{
-								"module_id":"car",
-								"name":"Add/Remove cars",
-								"table_id":"20000906",
-								"url":"https://vmiis.github.io/modules/car_booking/car.html"
-							}
+				
 						]
 					}
 				]
