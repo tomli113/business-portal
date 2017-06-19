@@ -1,7 +1,7 @@
 {
 	"library_path":"https://cbs.wappsystem.com/dev/github",
 	"parts_path":"https://vmiis.github.io/paths",
-	"image_path":"http://www.tomliweb.com/images",
+	"image_path":"https://www.tomliweb.com/images",
 	"api_path":"https://cbs.wappsystem.com/pro/",
 	"server":"production",
 	"modules":
@@ -14,7 +14,7 @@
 	"panels":
 	{
 		"main":{
-			"config_url":"http://www.tomliweb.com/configurations/main_panel.json"
+			"config_url":"https://www.tomliweb.com/configurations/main_panel.json"
 		}
 	}
 }
