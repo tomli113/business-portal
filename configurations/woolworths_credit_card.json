@@ -32,13 +32,13 @@
 							{
 								"module_id":"credit_query",
 								"name":"Credit Query",
-								"table_id":"20010703",
+								"table_id":"20010376",
 								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/query_credit.html"
 							},
 							{
 								"module_id":"debit_query",
 								"name":"Debit Query",
-								"table_id":"20010703",
+								"table_id":"20010376",
 								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/query_debit.html"
 							},
 							{
