@@ -29,13 +29,8 @@
 								"table_id":"20007198",
 								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
 							},
+						
 							{
-								"module_id":"m003",
-								"name":"bank_transaction",
-								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/bank_transaction.html"
-							},
-									{
 								"module_id":"kangdinglu_category",
 								"name":"kangdinglu_category",
 								"table_id":"20008529",
