@@ -1,0 +1,45 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+		"url":"https://vmiis.github.io/modules/panels/main.html",
+		"name":"Document Management in workplace",
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Document Management",
+						"tasks":
+						[
+							{
+								"module_id":"tom_knowledge_base",
+								"name":"Knowledge Base",
+								"table_id":"20004154",
+								"url":"https://tomli113.github.io/modules/woolcock/tom_knowledge_base.html"
+							},
+							{
+								"module_id":"woolcock_category",
+								"name":"woolcock_category",
+								"table_id":"20008369",
+								"url":"https://tomli113.github.io/modules/woolcock/woolcock_category.html"
+							},
+							{
+								"module_id":"woolcock_document",
+								"name":"woolcock_document",
+								"table_id":"20007241",
+								"url":"https://tomli113.github.io/modules/woolcock/woolcock_document.html"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+	}
+}

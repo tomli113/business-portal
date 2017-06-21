@@ -1,0 +1,45 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+		"url":"https://vmiis.github.io/modules/panels/main.html",
+		"name":"Woolcock Assets Management",
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Assets Management",
+						"tasks":
+						[
+							{
+								"module_id":"nas_details",
+								"name":"NAS",
+								"table_id":"20007408",
+								"url":"https://tomli113.github.io/modules/woolcock/nas_details.html"
+							},
+							{
+								"module_id":"pc_details",
+								"name":"Computers",
+								"table_id":"20007252",
+								"url":"https://tomli113.github.io/modules/woolcock/pc_details.html"
+							},
+							{
+								"module_id":"printer_details",
+								"name":"Printers",
+								"table_id":"20007253",
+								"url":"https://tomli113.github.io/modules/woolcock/printer_details.html"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+	}
+}
