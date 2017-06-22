@@ -39,19 +39,19 @@
 								"module_id":"private_info",
 								"name":"Staff Private Info",
 								"table_id":"20008443",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/private_info.html"
+								"url":"https://tomli113.github.io/modules/woolcock/staff/my_private_info.html"
 							},
 							{
 								"module_id":"personal_document",
 								"name":"Staff personal documents",
 								"table_id":"20008445",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/personal_document.html"
+								"url":"https://tomli113.github.io/modules/woolcock/staff/my_personal_document.html"
 							},
 							{
 								"module_id":"emergency_contact",
 								"name":"Staff Emergency Contacts",
 								"table_id":"20008444",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/emergency_contact.html"
+								"url":"https://tomli113.github.io/modules/woolcock/staff/my_emergency_contact.html"
 							},
 							{
 								"module_id":"department",
