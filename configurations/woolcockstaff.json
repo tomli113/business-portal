@@ -1,0 +1,52 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+		"url":"https://vmiis.github.io/modules/panels/main.html",
+		"name":"Woolcock Staff Management",
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Staff Management",
+						"tasks":
+						[
+
+							{
+								"module_id":"unikey_details",
+								"name":"Unikeys",
+								"table_id":"20007426",
+								"url":"https://tomli113.github.io/modules/woolcock/unikey_details.html"
+							},
+							{
+								"module_id":"woolcock_staff",
+								"name":"woolcock_staff",
+								"table_id":"20007254",
+								"url":"https://tomli113.github.io/modules/woolcock/staff.html"
+							},
+							{
+								"module_id":"search_and_display",
+								"name":"Search and Display",
+								"table_id":"20007254",
+								"url":"https://tomli113.github.io/modules/woolcock/search_and_display.html"
+							}
+							{
+								"module_id":"department",
+								"name":"Setup Department",
+								"table_id":"20008441",
+								"url":"https://tomli113.github.io/modules/woolcock/department.html"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+	}
+}
