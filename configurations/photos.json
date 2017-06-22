@@ -1,0 +1,62 @@
+{
+	"parameters" :
+	{
+	},
+	"panels" :
+	{
+		"main_panel" :
+		{
+		"url":"https://vmiis.github.io/modules/panels/main.html",
+		"name":"Photos",
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Photos",
+						"tasks":
+						[
+							{
+								"module_id":"k_upload_photo",
+								"name":"K Upload Photo",
+								"table_id":"20008531",
+								"url":"https://tomli113.github.io/modules/photos/k_upload_photo.html"
+							},
+							{
+								"module_id":"k_search_and_display",
+								"name":"K Search and Display Photos",
+								"table_id":"20008531",
+								"url":"https://tomli113.github.io/modules/photos/k_search_and_display.html"
+							},
+							{
+								"module_id":"k_photo_category",
+								"name":"K Photo Category",
+								"table_id":"20008535",
+								"url":"https://tomli113.github.io/modules/photos/k_photo_category.html"
+							},
+							{
+								"module_id":"upload_photo",
+								"name":"Upload Photo",
+								"table_id":"20008373",
+								"url":"https://tomli113.github.io/modules/photos/upload_photo.html"
+							},
+							{
+								"module_id":"p_search_and_display",
+								"name":"P Search and Display",
+								"table_id":"20008373",
+								"url":"https://tomli113.github.io/modules/photos/p_search_and_display.html"
+							},
+							{
+								"module_id":"photo_category",
+								"name":"Photo Category",
+								"table_id":"20008374",
+								"url":"https://tomli113.github.io/modules/woolcock/photos/photo_category.html"
+							}					]
+					}
+				]
+			}
+		]
+	}
+	}
+}
