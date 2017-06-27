@@ -29,7 +29,7 @@
 								"table_id":"20007198",
 								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
 							},
-						
+
 							{
 								"module_id":"kangdinglu_category",
 								"name":"kangdinglu_category",
@@ -41,6 +41,12 @@
 								"name":"kangdinglu_file",
 								"table_id":"20008528",
 								"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
+							},
+							{
+								"module_id":"kangdinglu_contact_person",
+								"name":"Kangdinglu Contact Person",
+								"table_id":"20008530",
+								"url":"https://tomli113.github.io/modules/personal/kangdinglu_contact_person.html"
 							},
 							{
 								"module_id":"m006",
