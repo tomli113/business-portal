@@ -6,65 +6,94 @@
 	{
 		"main_panel" :
 		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Tom Li Web",
-		"columns":
-		[
-			{
-				"sections":
-				[
-					{
-						"name":"Personnal",
-						"tasks":
-						[
-							{
-								"module_id":"m001",
-								"name":"My Information",
-								"table_id":"20007566",
-								"url":"https://tomli113.github.io/modules/personal/my_information.html"
-							},
-							{
-								"module_id":"m002",
-								"name":"Contact List",
-								"table_id":"20007198",
-								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
-							},
+			"url":"https://vmiis.github.io/modules/panels/main.html",
+			"name":"Tom Li Web",
+			"columns":
+			[
+				{
+					"sections":
+					[
+						{
+							"name":"Personnal",
+							"tasks":
+							[
+								{
+									"module_id":"m001",
+									"name":"My Information",
+									"table_id":"20007566",
+									"url":"https://tomli113.github.io/modules/personal/my_information.html"
+								},
+								{
+									"module_id":"m002",
+									"name":"Contact List",
+									"table_id":"20007198",
+									"url":"https://tomli113.github.io/modules/personal/contact_list.html"
+								},
 
-							{
-								"module_id":"kangdinglu_category",
-								"name":"kangdinglu_category",
-								"table_id":"20008529",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_category.html"
-							},
-							{
-								"module_id":"kangdinglu_file",
-								"name":"kangdinglu_file",
-								"table_id":"20008528",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
-							},
-							{
-								"module_id":"kangdinglu_contact_person",
-								"name":"Kangdinglu Contact Person",
-								"table_id":"20008530",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_contact_person.html"
-							},
-							{
-								"module_id":"m006",
-								"name":"spend_records",
-								"table_id":"20004783",
-								"url":"https://tomli113.github.io/modules/personal/spend_records.html"
-							},
-							{
-								"module_id":"m007",
-								"name":"travel_cost",
-								"table_id":"20007241",
-								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
-							}
-					         ]
-					}
-				]
-			}
-		]
-	}
+								{
+									"module_id":"kangdinglu_category",
+									"name":"kangdinglu_category",
+									"table_id":"20008529",
+									"url":"https://tomli113.github.io/modules/personal/kangdinglu_category.html"
+								},
+								{
+									"module_id":"kangdinglu_file",
+									"name":"kangdinglu_file",
+									"table_id":"20008528",
+									"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
+								},
+								{
+									"module_id":"kangdinglu_contact_person",
+									"name":"Kangdinglu Contact Person",
+									"table_id":"20008530",
+									"url":"https://tomli113.github.io/modules/personal/kangdinglu_contact_person.html"
+								},
+								{
+									"module_id":"m006",
+									"name":"spend_records",
+									"table_id":"20004783",
+									"url":"https://tomli113.github.io/modules/personal/spend_records.html"
+								},
+								{
+									"module_id":"m007",
+									"name":"travel_cost",
+									"table_id":"20007241",
+									"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
+								}
+							]
+							,"sections":
+							[
+								{
+									"name":"Event Calendar",
+									"tasks":
+									[
+										{
+											"module_id":"daily",
+											"name":"Daily",
+											"table_id":"20004160",
+											"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/daily.html",
+
+										},
+										{
+											"module_id":"weekly",
+											"name":"Weekly",
+											"table_id":"20004160",
+											"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/weekly.html"
+										},
+										{
+											"module_id":"monthly",
+											"name":"Monthly",
+											"table_id":"20004160",
+											"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/monthly.html"
+										}
+
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
 	}
 }
