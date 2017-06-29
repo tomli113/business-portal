@@ -1,13 +1,12 @@
 {
-	"parameters" :
-	{
+}{
+	"name":"",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
+	"parameters":{
+
 	},
-	"panels" :
+	"panel":
 	{
-		"main_panel" :
-		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Tom Li Web",
 		"columns":
 		[
 			{
@@ -15,9 +14,9 @@
 				[
 					{
 						"name":"Personnal",
-						"tasks":
+						"modules":
 						[
-							{
+								{
 								"module_id":"m001",
 								"name":"My Information",
 								"table_id":"20007566",
@@ -60,11 +59,58 @@
 								"table_id":"20007241",
 								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
 							}
-					         ]
+						]
+					}
+				]
+			}
+			,{
+				"sections":
+				[
+					{
+						"name":"Event Calendar",
+						"modules":
+						[
+							{
+								"module_id":"daily",
+								"name":"Daily",
+								"table_id":"20004160",
+								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/daily.html",
+
+							},
+							{
+								"module_id":"weekly",
+								"name":"Weekly",
+								"table_id":"20004160",
+								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/weekly.html"
+							},
+							{
+								"module_id":"monthly",
+								"name":"Monthly",
+								"table_id":"20004160",
+								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/monthly.html"
+							}
+
+						]
+					}
+				]
+			}
+			,{
+				"sections":
+				[
+					{
+						"name":"Event Record",
+						"modules":
+						[
+							{
+								"module_id":"event_record",
+								"name":"Event Record",
+								"table_id":"20010731",
+								"url":"https://tomli113.github.io/modules/team_event_calendar/event/event_record.html",
+							}
+						]
 					}
 				]
 			}
 		]
-	}
 	}
 }
