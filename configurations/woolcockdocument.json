@@ -1,13 +1,11 @@
 {
+	"name":"",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters" :
 	{
 	},
-	"panels" :
+	"panel":
 	{
-		"main_panel" :
-		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Document Management in workplace",
 		"columns":
 		[
 			{
@@ -47,6 +45,6 @@
 				]
 			}
 		]
-	}
+
 	}
 }
