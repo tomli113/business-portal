@@ -34,10 +34,10 @@
 								"url":"https://tomli113.github.io/modules/woolcock/woolcock_document.html"
 							},
 								{
-									"module_id":"woolcock_category",
-									"name":"woolcock_category",
+									"module_id":"category",
+									"name":"Category",
 									"table_id":"20008369",
-									"url":"https://tomli113.github.io/modules/woolcock/woolcock_category.html"
+									"url":"https://tomli113.github.io/modules/woolcock/category.html"
 								}
 						]
 					}
