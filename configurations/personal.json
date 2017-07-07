@@ -1,21 +1,19 @@
 {
+	"name":"",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters" :
 	{
 	},
-	"panels" :
+	"panel":
 	{
-		"main_panel" :
-		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Tom Li Web",
 		"columns":
 		[
 			{
 				"sections":
 				[
 					{
-						"name":"Personnal",
-						"tasks":
+						"name":"Tom Document Management",
+						"modules":
 						[
 							{
 								"module_id":"m001",
@@ -31,10 +29,10 @@
 							},
 
 							{
-								"module_id":"kangdinglu_category",
-								"name":"kangdinglu_category",
+								"module_id":"category",
+								"name":"Category",
 								"table_id":"20008529",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_category.html"
+								"url":"https://tomli113.github.io/modules/personal/category.html"
 							},
 							{
 								"module_id":"kangdinglu_file",
@@ -60,11 +58,10 @@
 								"table_id":"20007241",
 								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
 							}
-					         ]
+						]
 					}
 				]
 			}
 		]
-	}
 	}
 }
