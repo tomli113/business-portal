@@ -12,8 +12,8 @@
 				"sections":
 				[
 					{
-						"name":"Document Management",
-						"tasks":
+						"name":"Test",
+						"modules":
 						[
 							{
 								"module_id":"tom_knowledge_base",
@@ -39,12 +39,10 @@
 									"table_id":"20008369",
 									"url":"https://tomli113.github.io/modules/woolcock/woolcock_category.html"
 								}
-
 						]
 					}
 				]
 			}
 		]
-
 	}
 }
