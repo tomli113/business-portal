@@ -149,49 +149,49 @@
 							{
 								"module_id":"n_current_balance",
 								"name":"Current Balance",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/current_balance.html"
 							},
 							{
-								"module_id":"c_yearly_expense_by_item",
+								"module_id":"n_yearly_expense_by_item",
 								"name":"Yearly Expense by item",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_expense_by_item.html"
 							},
 							{
-								"module_id":"c_yearly_credit",
+								"module_id":"n_yearly_credit",
 								"name":"Yearly credit",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_credit.html"
 							},
 							{
-								"module_id":"c_yearly_credit_by_person",
+								"module_id":"n_yearly_credit_by_person",
 								"name":"Yearly Credit by Person",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_credit_by_person.html"
 							},
 							{
-								"module_id":"c_monthly_credit",
+								"module_id":"n_monthly_credit",
 								"name":"Monthly Credit",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/monthly_credit.html"
 							},
 							{
-								"module_id":"c_monthly_credit_by_person",
+								"module_id":"n_monthly_credit_by_person",
 								"name":"Monthly Credit by Person",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/monthly_credit_by_person.html"
 							},
 							{
-								"module_id":"c_yearly_expense_chart_by_item",
+								"module_id":"n_yearly_expense_chart_by_item",
 								"name":"Yearly expense chart by item",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_expense_chart_by_item.html"
 							},
 							{
-								"module_id":"c_chart_of_expense",
+								"module_id":"n_chart_of_expense",
 								"name":"Chart of expense",
-								"table_id":"20010731",
+								"table_id":"20010732",
 								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/chart_of_expense.html"
 							}
 						]
