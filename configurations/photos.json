@@ -25,10 +25,10 @@
 								"url":"https://tomli113.github.io/modules/photos/upload_photo.html"
 							},
 							{
-								"module_id":"p_search_and_display",
-								"name":"P Search and Display",
+								"module_id":"search_and_display",
+								"name":"Search and Display",
 								"table_id":"20008373",
-								"url":"https://tomli113.github.io/modules/photos/p_search_and_display.html"
+								"url":"https://tomli113.github.io/modules/photos/search_and_display.html"
 							},
 							{
 								"module_id":"photo_category",
