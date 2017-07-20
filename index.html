@@ -94,24 +94,48 @@ $(document).ready(function(){
 	}
 	//--------------------------------------------------------
 	$vm.url=function(text){
+		text=text.replace(/__BASE__\/vmiis\/Common-Code\//g,'__PARTS__/');
+		text=text.replace(/__LIB__\/vmiis\/Common-Code\//g,'__PARTS__/');
+		text=text.replace(/__BASE__\/vmiis\/common-code\//g,'__PARTS__/');
+		text=text.replace(/__LIB__\/vmiis\/common-code\//g,'__PARTS__/');
 		text=text.replace(/__BASE__\//g,$vm.library_path+'/');
 		text=text.replace(/__LIB__\//g,$vm.library_path+'/');
+		text=text.replace(/__PARTS__\//g,$vm.parts_path+'/');
 		text=text.replace(/__HOST__\//g,$vm.hosting_path+'/');
 		text=text.replace(/__VER__/g,$vm.version);
-		text=text.replace(/__PARTS__\//g,$vm.parts_path+'/');
 		text=text.replace(/__IMAGE__\//g,$vm.image_path+'/');
 		if(window.location.hostname=='127.0.0.1' || window.location.hostname=='localhost'){
-			//---------------------
-			//for json
-			text=text.replace(/https:\/\/www.tomliweb.com/g,window.location.protocol+'//'+window.location.host+'/tomli113/business-portal');
-			//---------------------
+			//use local version
 			text=text.replace(/https:\/\/vmiis.github.io/g,window.location.protocol+'//'+window.location.host+'/vmiis');
 			text=text.replace(/https:\/\/wappsystem.github.io/g,window.location.protocol+'//'+window.location.host+'/wappsystem');
 			text=text.replace(/https:\/\/woolcock-imr.github.io/g,window.location.protocol+'//'+window.location.host+'/woolcock-imr');
 			text=text.replace(/https:\/\/rt.woolcock.org.au\/github\/woolcock-imr/g,window.location.protocol+'//'+window.location.host+'/woolcock-imr');
 			text=text.replace(/https:\/\/cbs.wappsystem.com\/dev\/github/g,window.location.protocol+'//'+window.location.host);
+			text=text.replace(/https:\/\/cbs.wappsystem.com\/pro\/github/g,window.location.protocol+'//'+window.location.host);
 			text=text.replace(/https:\/\/image.datalinkedin.com/g,window.location.protocol+'//'+window.location.host+'/vmiis/images');
-			text=text.replace(/https:\/\/tomli113.github.io\/business-portal/g,$vm.hosting_path);
+			//do not use local system files
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/api/g,'https://vmiis.github.io/api');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/framework/g,'https://vmiis.github.io/framework');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/parts/g,'https://vmiis.github.io/parts');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/modules/g,'https://vmiis.github.io/modules');
+		}
+		if(window.location.toString().indexOf('_d=1')!=-1){
+			//use local system files
+			text=text.replace(/https:\/\/vmiis.github.io\/api/g,'http://127.0.0.1:8000/vmiis/api');
+			text=text.replace(/https:\/\/vmiis.github.io\/framework/g,'http://127.0.0.1:8000/vmiis/framework');
+			text=text.replace(/https:\/\/vmiis.github.io\/parts/g,'http://127.0.0.1:8000/vmiis/parts');
+			text=text.replace(/https:\/\/vmiis.github.io\/modules/g,'http://127.0.0.1:8000/vmiis/modules');
+		}
+		if(window.location.toString().indexOf('_d=2')!=-1){
+			//use latest unstable version (master branch, not gh-pages branch)
+			text=text.replace(/https:\/\/vmiis.github.io\/api/g,'https://raw.githubusercontent.com/vmiis/api/master');
+			text=text.replace(/https:\/\/vmiis.github.io\/framework/g,'https://raw.githubusercontent.com/vmiis/framework/master');
+			text=text.replace(/https:\/\/vmiis.github.io\/parts/g,'https://raw.githubusercontent.com/vmiis/parts/master');
+			text=text.replace(/https:\/\/vmiis.github.io\/modules/g,'https://raw.githubusercontent.com/vmiis/modules/master');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/api/g,'https://raw.githubusercontent.com/vmiis/api/master');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/framework/g,'https://raw.githubusercontent.com/vmiis/framework/master');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/parts/g,'https://raw.githubusercontent.com/vmiis/parts/master');
+			text=text.replace(/http:\/\/127.0.0.1:8000\/vmiis\/modules/g,'https://raw.githubusercontent.com/vmiis/modules/master');
 		}
 		else{
 			text=text.replace(/https:\/\/tomli113.github.io\/business-portal/g,'https://www.tomliweb.com');
