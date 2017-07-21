@@ -21,19 +21,19 @@
 								"module_id":"k_upload_photo",
 								"name":"K Upload Photo",
 								"table_id":"20008531",
-								"url":"https://tomli113.github.io/modules/photos/upload_photo.html"
+								"url":"https://tomli113.github.io/modules/k_photos/k_upload_photo.html"
 							},
 							{
 								"module_id":"k_search_and_display",
 								"name":"K Search and Display Photos",
 								"table_id":"20008531",
-								"url":"https://tomli113.github.io/modules/photos/search_and_display.html"
+								"url":"https://tomli113.github.io/modules/k_photos/k_search_and_display.html"
 							},
 							{
 								"module_id":"k_photo_category",
 								"name":"K Photo Category",
 								"table_id":"20008535",
-								"url":"https://tomli113.github.io/modules/photos/category.html"
+								"url":"https://tomli113.github.io/modules/k_photos/k_photo_category.html"
 							}
 
 						]
