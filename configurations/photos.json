@@ -31,10 +31,10 @@
 								"url":"https://tomli113.github.io/modules/photos/search_and_display.html"
 							},
 							{
-								"module_id":"photo_category",
+								"module_id":"category",
 								"name":"Photo Category",
 								"table_id":"20008374",
-								"url":"https://tomli113.github.io/modules/photos/photo_category.html"
+								"url":"https://tomli113.github.io/modules/photos/category.html"
 							}
 						]
 					}
