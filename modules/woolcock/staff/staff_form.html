@@ -1,0 +1,41 @@
+<section>
+    <div id=toolbar__ID>
+        <a id=back__ID>Back</a> <a id=pv__ID>Print</a> <span class=tab__ID></span>Staff
+    </div>
+    <div id=pvdiv__ID>
+        <form id=F__ID style='padding:30px'>
+            <img id=img__ID />
+            <div id=info__ID style=''display:block>aaa</div>
+        </form>
+    </div>
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__BASE__/vmiis/Common-Code/toolbar/back_and_print.js
+        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
+        //-------------------------------------
+        var set_image_url=function($obj,rid,filename,modified){
+            if(rid===undefined) return;
+            var ext=filename.split('.').pop();
+            var thumb=filename;
+            var p='S'+rid;
+        	if($vm.vm['__ID'][p]!==undefined) $obj.attr('src',$vm.vm['__ID'][p]);
+        	else{
+            	$vm.s3_link({rid:rid,filename:thumb,days:'1',modified:modified,callback:function(url){
+        	        $vm.vm['__ID'][p]=url;
+        	        $obj.attr('src',url);
+                    $("#image__ID").handsontable("render");
+            	}});
+            }
+        };
+        //-------------------------------------
+        $('#D__ID').on('load',function(){
+            set_image_url($('#img__ID'),$vm.vm['__ID'].op.rid,$vm.vm['__ID'].op.filename,$vm.vm['__ID'].op.modified);
+            $('#info__ID').html($vm.vm['__ID'].op.info)
+        })
+    }
+</script>
+<style>
+    VmInclude:__BASE__/vmiis/Common-Code/style/default.css
+</style>

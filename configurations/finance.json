@@ -19,7 +19,7 @@
 								"module_id":"w_transaction_import",
 								"name":"Transaction Import",
 								"table_id":"20010375",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/transaction_import.html",
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/transaction_import.html",
 								"counting":"1"
 							},
 							{
@@ -27,32 +27,32 @@
 								"module_id":"w_transaction_bi",
 								"name":"Transaction bi",
 								"table_id":"20010376",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/transaction_bi.html",
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/transaction_bi.html",
 								"counting":"1"
 							},
 							{
 								"module_id":"w_credit_query",
 								"name":"Credit Query",
 								"table_id":"20010376",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/query_credit.html"
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/query_credit.html"
 							},
 							{
 								"module_id":"w_debit_query",
 								"name":"Debit Query",
 								"table_id":"20010376",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/query_debit.html"
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/query_debit.html"
 							},
 							{
 								"module_id":"w_credit_chart",
 								"name":"Credit Chart",
 								"table_id":"20010376",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/chart_credit.html"
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/chart_credit.html"
 							},
 							{
 								"module_id":"w_debit_chart",
 								"name":"Debit Chart",
 								"table_id":"20010376",
-								"url":"https://tomli113.github.io/modules/personal/woolworths_credit_card/chart_debit.html"
+								"url":"https://vmiis.github.io/modules/woolworths_credit_card/chart_debit.html"
 							}
 						]
 					}
