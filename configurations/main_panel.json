@@ -1,13 +1,11 @@
 {
+	"name":"Business Portal",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters" :
 	{
 	},
-	"panels" :
+	"panel" :
 	{
-		"main_panel" :
-		{
-			"url":"https://vmiis.github.io/modules/panels/main.html",
-			"name":"Business Portal",
 			"columns":
 			[
 				{
@@ -15,7 +13,7 @@
 					[
 						{
 							"name":" ",
-							"tasks":
+							"modules":
 							[
 								{
 									"module_id":"application",
@@ -46,6 +44,5 @@
 					]
 				}
 			]
-		}
 	}
 }
