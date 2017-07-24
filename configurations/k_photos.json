@@ -1,46 +1,49 @@
 {
-	"parameters" :
-	{
+	"name":"Photos",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
+	"parameters":{
 	},
-	"panels" :
+	"panel":
 	{
-		"main_panel" :
-		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Photos",
 		"columns":
 		[
 			{
 				"sections":
 				[
 					{
-						"name":"Photos",
-						"tasks":
+						"name" : "Photos",
+						"modules" :
 						[
 							{
-								"module_id":"k_upload_photo",
-								"name":"K Upload Photo",
-								"table_id":"20008531",
-								"url":"https://tomli113.github.io/modules/k_photos/k_upload_photo.html"
+							   "module_id" : "m01",
+							   "name" : "Upload Photos",
+							   "table_id" : "20008531",
+							   "url" : "/modules/upload_photo.html"
 							},
 							{
-								"module_id":"k_search_and_display",
-								"name":"K Search and Display Photos",
-								"table_id":"20008531",
-								"url":"https://tomli113.github.io/modules/k_photos/k_search_and_display.html"
-							},
-							{
-								"module_id":"k_photo_category",
-								"name":"K Photo Category",
-								"table_id":"20008535",
-								"url":"https://tomli113.github.io/modules/k_photos/k_photo_category.html"
+							   "module_id" : "m02",
+							   "name" : "Search and Display Photos",
+							   "table_id" : "20008531",
+							   "url" : "/modules/search_and_display.html",
+							   "counting":"1"
 							}
-
+						]
+					},
+					{
+						"name" : "Classification",
+						"modules" :
+						[
+							{
+							   "module_id" : "category",
+							   "name" : "Category",
+							   "table_id" : "20008535",
+							   "url" : "/modules/category.html",
+							   "counting":"1"
+							}
 						]
 					}
 				]
 			}
 		]
-	}
 	}
 }
