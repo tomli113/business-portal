@@ -18,13 +18,13 @@
 							   "module_id" : "m01",
 							   "name" : "Upload Photos",
 							   "table_id" : "20008373",
-							   "url" : "/modules/upload_photo.html"
+							   "url" : "/modules/photo/upload_photo.html"
 							},
 							{
 							   "module_id" : "m02",
 							   "name" : "Search and Display Photos",
 							   "table_id" : "20008373",
-							   "url" : "/modules/search_and_display.html",
+							   "url" : "/modules/photo/search_and_display.html",
 							   "counting":"1"
 							}
 						]
@@ -37,7 +37,7 @@
 							   "module_id" : "category",
 							   "name" : "Category",
 							   "table_id" : "20008374",
-							   "url" : "/modules/category.html",
+							   "url" : "/modules/photo/category.html",
 							   "counting":"1"
 							}
 						]
