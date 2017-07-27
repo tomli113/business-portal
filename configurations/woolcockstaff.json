@@ -21,43 +21,43 @@
 								"module_id":"unikey_details",
 								"name":"Unikeys",
 								"table_id":"20007426",
-								"url":"https://tomli113.github.io/modules/woolcock/unikey_details.html"
+								"url":"/modules/staff/unikey_details.html"
 							},
 							{
 								"module_id":"woolcock_staff",
 								"name":"Woolcock_staff",
 								"table_id":"20007254",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/staff.html"
+								"url":"/modules/staff/staff/staff.html"
 							},
 							{
 								"module_id":"staff_phone_and_room",
 								"name":"Staff's phone and number",
 								"table_id":"20007254",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/staff_phone_and_room.html"
+								"url":"/modules/staff/staff/staff_phone_and_room.html"
 							},
 							{
 								"module_id":"private_info",
 								"name":"Staff Private Info",
 								"table_id":"20008443",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/my_private_info.html"
+								"url":"/modules/staff/staff/my_private_info.html"
 							},
 							{
 								"module_id":"personal_document",
 								"name":"Staff personal documents",
 								"table_id":"20008445",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/my_personal_document.html"
+								"url":"/modules/staff/staff/my_personal_document.html"
 							},
 							{
 								"module_id":"emergency_contact",
 								"name":"Staff Emergency Contacts",
 								"table_id":"20008444",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/my_emergency_contact.html"
+								"url":"/modules/staff/staff/my_emergency_contact.html"
 							},
 							{
 								"module_id":"department",
 								"name":"Setup Department",
 								"table_id":"20008441",
-								"url":"https://tomli113.github.io/modules/woolcock/staff/department.html"
+								"url":"/modules/staff/staff/department.html"
 							}
 						]
 					}
