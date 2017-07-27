@@ -19,25 +19,25 @@
 								"module_id":"tom_knowledge_base",
 								"name":"Knowledge Base",
 								"table_id":"20004154",
-								"url":"https://tomli113.github.io/modules/woolcock/tom_knowledge_base.html"
+								"url":"/modules/woolcock/tom_knowledge_base.html"
 							},
 							{
 								"module_id":"w_supplier",
 								"name":"Supplier",
 								"table_id":"20007228",
-								"url":"https://tomli113.github.io/modules/woolcock/supplier.html"
+								"url":"/modules/woolcock/supplier.html"
 							},
 							{
 								"module_id":"woolcock_document",
 								"name":"woolcock_document",
 								"table_id":"20008368",
-								"url":"https://tomli113.github.io/modules/woolcock/woolcock_document.html"
+								"url":"/modules/woolcock/woolcock_document.html"
 							},
 								{
 									"module_id":"category",
 									"name":"Category",
 									"table_id":"20008369",
-									"url":"https://tomli113.github.io/modules/woolcock/category.html"
+									"url":"/modules/woolcock/category.html"
 								}
 						]
 					}

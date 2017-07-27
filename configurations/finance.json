@@ -19,7 +19,7 @@
 								"module_id":"w_transaction_import",
 								"name":"Transaction Import",
 								"table_id":"20010375",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/transaction_import.html",
+								"url":"/modules/woolworths_credit_card/transaction_import.html",
 								"counting":"1"
 							},
 							{
@@ -27,32 +27,32 @@
 								"module_id":"w_transaction_bi",
 								"name":"Transaction bi",
 								"table_id":"20010376",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/transaction_bi.html",
+								"url":"/modules/woolworths_credit_card/transaction_bi.html",
 								"counting":"1"
 							},
 							{
 								"module_id":"w_credit_query",
 								"name":"Credit Query",
 								"table_id":"20010376",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/query_credit.html"
+								"url":"/modules/woolworths_credit_card/query_credit.html"
 							},
 							{
 								"module_id":"w_debit_query",
 								"name":"Debit Query",
 								"table_id":"20010376",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/query_debit.html"
+								"url":"/modules/woolworths_credit_card/query_debit.html"
 							},
 							{
 								"module_id":"w_credit_chart",
 								"name":"Credit Chart",
 								"table_id":"20010376",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/chart_credit.html"
+								"url":"/modules/woolworths_credit_card/chart_credit.html"
 							},
 							{
 								"module_id":"w_debit_chart",
 								"name":"Debit Chart",
 								"table_id":"20010376",
-								"url":"https://vmiis.github.io/modules/woolworths_credit_card/chart_debit.html"
+								"url":"/modules/woolworths_credit_card/chart_debit.html"
 							}
 						]
 					}
@@ -69,56 +69,56 @@
 								"module_id":"c_bank_transaction",
 								"name":"Bank Transaction",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/bank_transaction.html",
+								"url":"/modules/commonwealth_credit_card/bank_transaction.html",
 								"counting":"1"
 							},
 							{
 								"module_id":"c_current_balance",
 								"name":"Current Balance",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/current_balance.html"
+								"url":"/modules/commonwealth_credit_card/current_balance.html"
 							},
 							{
 								"module_id":"c_yearly_expense_by_item",
 								"name":"Yearly Expense by item",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/yearly_expense_by_item.html"
+								"url":"/modules/commonwealth_credit_card/yearly_expense_by_item.html"
 							},
 							{
 								"module_id":"c_yearly_credit",
 								"name":"Yearly credit",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/yearly_credit.html"
+								"url":"/modules/commonwealth_credit_card/yearly_credit.html"
 							},
 							{
 								"module_id":"c_yearly_credit_by_person",
 								"name":"Yearly Credit by Person",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/yearly_credit_by_person.html"
+								"url":"/modules/commonwealth_credit_card/yearly_credit_by_person.html"
 							},
 							{
 								"module_id":"c_monthly_credit",
 								"name":"Monthly Credit",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/monthly_credit.html"
+								"url":"/modules/commonwealth_credit_card/monthly_credit.html"
 							},
 							{
 								"module_id":"c_monthly_credit_by_person",
 								"name":"Monthly Credit by Person",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/monthly_credit_by_person.html"
+								"url":"/modules/commonwealth_credit_card/monthly_credit_by_person.html"
 							},
 							{
 								"module_id":"c_yearly_expense_chart_by_item",
 								"name":"Yearly expense chart by item",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/yearly_expense_chart_by_item.html"
+								"url":"/modules/commonwealth_credit_card/yearly_expense_chart_by_item.html"
 							},
 							{
 								"module_id":"c_chart_of_expense",
 								"name":"Chart of expense",
 								"table_id":"20007307",
-								"url":"https://tomli113.github.io/modules/personal/commonwealth_credit_card/chart_of_expense.html"
+								"url":"/modules/commonwealth_credit_card/chart_of_expense.html"
 							}
 						]
 					}
@@ -135,7 +135,7 @@
 								"module_id":"nab_transactions",
 								"name":"Transactions",
 								"table_id":"20010731",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/nab_transactions.html",
+								"url":"/modules/nab_credit_card/nab_transactions.html",
 								"counting":"1"
 							},
 							{
@@ -143,56 +143,56 @@
 								"module_id":"n_transaction_bi",
 								"name":"Transaction bi",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/transaction_bi.html",
+								"url":"/modules/nab_credit_card/transaction_bi.html",
 								"counting":"1"
 							},
 							{
 								"module_id":"n_current_balance",
 								"name":"Current Balance",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/current_balance.html"
+								"url":"/modules/nab_credit_card/current_balance.html"
 							},
 							{
 								"module_id":"n_yearly_expense_by_item",
 								"name":"Yearly Expense by item",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_expense_by_item.html"
+								"url":"/modules/nab_credit_card/yearly_expense_by_item.html"
 							},
 							{
 								"module_id":"n_yearly_credit",
 								"name":"Yearly credit",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_credit.html"
+								"url":"/modules/nab_credit_card/yearly_credit.html"
 							},
 							{
 								"module_id":"n_yearly_credit_by_person",
 								"name":"Yearly Credit by Person",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_credit_by_person.html"
+								"url":"/modules/nab_credit_card/yearly_credit_by_person.html"
 							},
 							{
 								"module_id":"n_monthly_credit",
 								"name":"Monthly Credit",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/monthly_credit.html"
+								"url":"/modules/nab_credit_card/monthly_credit.html"
 							},
 							{
 								"module_id":"n_monthly_credit_by_person",
 								"name":"Monthly Credit by Person",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/monthly_credit_by_person.html"
+								"url":"/modules/nab_credit_card/monthly_credit_by_person.html"
 							},
 							{
 								"module_id":"n_yearly_expense_chart_by_item",
 								"name":"Yearly expense chart by item",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/yearly_expense_chart_by_item.html"
+								"url":"/modules/nab_credit_card/yearly_expense_chart_by_item.html"
 							},
 							{
 								"module_id":"n_chart_of_expense",
 								"name":"Chart of expense",
 								"table_id":"20010732",
-								"url":"https://tomli113.github.io/modules/personal/nab_credit_card/chart_of_expense.html"
+								"url":"/modules/nab_credit_card/chart_of_expense.html"
 							}
 						]
 					}

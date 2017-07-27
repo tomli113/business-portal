@@ -1,6 +1,5 @@
 //-------------------------------------
-var ids=_sys.config.module_ids;
-var staff_tid=$vm.module_list[ids.staff].table_id;
+var staff_tid=$vm.module_list[_ids.staff].table_id;
 //-------------------------------------
 var _default_cell_render=function(records,I,field,td,set_value,source){
     switch(field){

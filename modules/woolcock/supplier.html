@@ -1,11 +1,11 @@
 <section>
-      VmInclude:__BASE__/vmiis/Common-Code/grid/grid.html
+      VmInclude:__PARTS__/grid/grid.html
 </section>
 <script>
     function F__ID(){
         //-------------------------------------
-        VmInclude:__BASE__/vmiis/Common-Code/grid/grid.js
-        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
         //-------------------------------------
         _fields="Supplier_Name,Contact_Name,Address,Suburb,Postcode,State,Telephone,Mobilephone,Fax,Email,Web,Additional_Information";
         _fields+=",Submit Date|DateTime,Submitted by|Author";
@@ -46,5 +46,5 @@
     }
 </script>
 <style>
-    VmInclude:__BASE__/vmiis/Common-Code/style/default.css
+    VmInclude:__PARTS__/grid/grid.css
 </style>

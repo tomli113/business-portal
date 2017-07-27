@@ -19,26 +19,26 @@
 								"module_id":"daily",
 								"name":"Daily",
 								"table_id":"20004160",
-								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/daily.html"
+								"url":"/modules/team_event_calendar/calendar/daily.html"
 
 							},
 							{
 								"module_id":"weekly",
 								"name":"Weekly",
 								"table_id":"20004160",
-								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/weekly.html"
+								"url":"/modules/team_event_calendar/calendar/weekly.html"
 							},
 							{
 								"module_id":"monthly",
 								"name":"Monthly",
 								"table_id":"20004160",
-								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/monthly.html"
+								"url":"/modules/team_event_calendar/calendar/monthly.html"
 							},
 							{
 								"module_id":"record",
 								"name":"Records",
 								"table_id":"20004160",
-								"url":"https://tomli113.github.io/modules/team_event_calendar/calendar/record.html",
+								"url":"/modules/team_event_calendar/calendar/record.html",
 								"counting":"1"
 							}
 						]

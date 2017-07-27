@@ -19,44 +19,44 @@
 								"module_id":"m001",
 								"name":"My Information",
 								"table_id":"20007566",
-								"url":"https://tomli113.github.io/modules/personal/my_information.html"
+								"url":"/modules/personal/my_information.html"
 							},
 							{
 								"module_id":"m002",
 								"name":"Contact List",
 								"table_id":"20007198",
-								"url":"https://tomli113.github.io/modules/personal/contact_list.html"
+								"url":"/modules/personal/contact_list.html"
 							},
 
 							{
 								"module_id":"category",
 								"name":"Category",
 								"table_id":"20008529",
-								"url":"https://tomli113.github.io/modules/personal/category.html"
+								"url":"/modules/personal/category.html"
 							},
 							{
 								"module_id":"kangdinglu_file",
 								"name":"kangdinglu_file",
 								"table_id":"20008528",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_file.html"
+								"url":"/modules/personal/kangdinglu_file.html"
 							},
 							{
 								"module_id":"kangdinglu_contact_person",
 								"name":"Kangdinglu Contact Person",
 								"table_id":"20008530",
-								"url":"https://tomli113.github.io/modules/personal/kangdinglu_contact_person.html"
+								"url":"/modules/personal/kangdinglu_contact_person.html"
 							},
 							{
 								"module_id":"m006",
 								"name":"spend_records",
 								"table_id":"20004783",
-								"url":"https://tomli113.github.io/modules/personal/spend_records.html"
+								"url":"/modules/personal/spend_records.html"
 							},
 							{
 								"module_id":"m007",
 								"name":"travel_cost",
 								"table_id":"20007241",
-								"url":"https://tomli113.github.io/modules/personal/travel_cost.html"
+								"url":"/modules/personal/travel_cost.html"
 							}
 						]
 					}

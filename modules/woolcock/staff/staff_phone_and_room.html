@@ -23,8 +23,8 @@
         _fields="First_Name,Last_Name,Department,Position,Location,Email,Phone";
         _fields+=",Submit Date|DateTime,Submitted by|Author,Hidden|File,Hidden|Size,Hidden|lastModified";
         //-------------------------------------
-		var ids=_sys.config.module_ids;
-		var department_tid=$vm.module_list[ids.department].table_id;
+		var _ids=_sys.config.module_ids;
+		var department_tid=$vm.module_list[_ids.department].table_id;
 		//-------------------------------------
         $('#department__ID').autocomplete({
             minLength:0,
@@ -133,7 +133,7 @@
 						child:'1',
 						readonly:'1'
 					}
-					$vm.load_module_by_name(ids.staff,undefined,op);
+					$vm.load_module_by_name(_ids.staff,undefined,op);
                 })
             });
        }
