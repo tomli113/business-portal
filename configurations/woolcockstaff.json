@@ -1,19 +1,17 @@
 {
+	"name":"Woolcock Staff Management",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
 	"parameters" :
 	{
 	},
-	"panels" :
+	"panel":
 	{
-		"main_panel" :
-		{
-		"url":"https://vmiis.github.io/modules/panels/main.html",
-		"name":"Woolcock Staff Management",
 		"columns":
 		[
 			{
 				"sections":
 				[
-					{
+						{
 						"name":"Staff Management",
 						"tasks":
 						[
@@ -27,43 +25,42 @@
 								"module_id":"woolcock_staff",
 								"name":"Woolcock_staff",
 								"table_id":"20007254",
-								"url":"/modules/staff/staff/staff.html"
+								"url":"/modules/staff/staff.html"
 							},
 							{
 								"module_id":"staff_phone_and_room",
 								"name":"Staff's phone and number",
 								"table_id":"20007254",
-								"url":"/modules/staff/staff/staff_phone_and_room.html"
+								"url":"/modules/staff/staff_phone_and_room.html"
 							},
 							{
 								"module_id":"private_info",
 								"name":"Staff Private Info",
 								"table_id":"20008443",
-								"url":"/modules/staff/staff/my_private_info.html"
+								"url":"/modules/staff/private_info.html"
 							},
 							{
 								"module_id":"personal_document",
 								"name":"Staff personal documents",
 								"table_id":"20008445",
-								"url":"/modules/staff/staff/my_personal_document.html"
+								"url":"/modules/staff/personal_document.html"
 							},
 							{
 								"module_id":"emergency_contact",
 								"name":"Staff Emergency Contacts",
 								"table_id":"20008444",
-								"url":"/modules/staff/staff/my_emergency_contact.html"
+								"url":"/modules/staff/emergency_contact.html"
 							},
 							{
 								"module_id":"department",
 								"name":"Setup Department",
 								"table_id":"20008441",
-								"url":"/modules/staff/staff/department.html"
+								"url":"/modules/staff/department.html"
 							}
 						]
 					}
 				]
 			}
 		]
-	}
 	}
 }

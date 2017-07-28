@@ -15,6 +15,12 @@
 						"modules":
 						[
 							{
+								"module_id":"unikey_details",
+								"name":"Unikeys",
+								"table_id":"20007426",
+								"url":"/modules/staff/unikey_details.html"
+							},
+							{
 								"module_id":"nas_details",
 								"name":"NAS",
 								"table_id":"20007408",
