@@ -20,7 +20,7 @@
         VmInclude:__PARTS__/grid/grid.js
         VmInclude:__PARTS__/style/ease-in-out.js
         //-------------------------------------
-        var fields="Photo,_More,Title,First_Name,Last_Name,Gender,Department,Position,Location,Email,Phone,Login_Name";
+        var fields="File,_More,Title,First_Name,Last_Name,Gender,Department,Position,Location,Email,Phone,Login_Name";
         _fields="_Form,"+fields+",Submit Date|DateTime,Submitted by|Author,_Delete";
         //-------------------------------------
         if($vm.user=='guest') _fields=_fields.replace(',_Delete','');
@@ -93,7 +93,7 @@
 						}
                     });
                     break;
-                case 'Photo':
+                case 'File':
                     VmInclude:__PARTS__/grid/field_image.js
                 break;
                 case 'Gender':

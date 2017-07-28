@@ -41,7 +41,7 @@
         $('#D__ID').on('load',function(){ _set_req(); _request_data(); })
         //-------------------------------------
         var set_image_url=function($obj,rid,filename,modified){
-            if(filename=="") return;
+            if(filename=="" || filename==undefined) return;
             if(rid===undefined) return;
             var ext=filename.split('.').pop();
             var thumb=filename+'_thumb.'+ext;
@@ -114,7 +114,7 @@
                 var i=$(this).attr('data-i');
                 var rid=records[i].ID;
                 var modified=records[i].Modified;
-                var filename=records[i].Photo;
+                var filename=records[i].File;
                 var info="";
                 info+=records[i].First_Name+' '+records[i].Last_Name +"<br>";
                 info+=records[i].Phone +"<br>";

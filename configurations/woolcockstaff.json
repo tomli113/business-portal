@@ -13,7 +13,7 @@
 				[
 						{
 						"name":"Staff Management",
-						"tasks":
+						"modules":
 						[
 							{
 								"module_id":"unikey_details",
