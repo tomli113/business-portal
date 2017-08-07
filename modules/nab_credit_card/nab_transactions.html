@@ -12,16 +12,7 @@
         //-------------------------------------
         $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
         //-------------------------------------
-        _columns_process=function(columns){
-            columns[0]={data:'Date',width:120,type: 'date',format: 'DD/MM/YYYY',correctFormat:true};
-            columns[2]={data:'Type',type:'dropdown',trimDropdown:false,source:[
-            ]};
-            columns[3]={data:'C_D',type:'dropdown',trimDropdown:false,source:[
-                "Credit","Debit","Refund"
-            ]};
-            columns[4]={data:'Amount',type: 'numeric',format: '$ 0,0.00[0000]'};
-            //-------------------------------------
-        }
+        
         //-------------------------------------
         _cell_render=function(records,I,field,td,set_value,source){
             switch(field){
