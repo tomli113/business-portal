@@ -127,7 +127,7 @@
                 //check first record
                 var items=gLines[gI].splitCSV(gTab);
                 var sql="select top 1 ID from [TABLE-"+_db_pid+"] where DT1=@T1 and V1=@D1 and V2=@D2 and S1=@S1 and S2=@S2";
-                items[0]=$vm.date_to_string_dmy(new Date(items[0]));
+                //items[0]=$vm.date_to_string_dmy(new Date(items[0]));
                 if(items[2]=='') items[2]='0';
                 if(items[3]=='') items[3]='0';
                 var req={cmd:"query_records",sql:sql,t1:items[0],d1:items[2],d2:items[3],s1:items[4],s2:items[5]};
