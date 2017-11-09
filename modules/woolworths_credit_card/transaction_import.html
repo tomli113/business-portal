@@ -27,7 +27,7 @@
         }
         //-------------------------------------
         _before_submit=function(record,dbv){
-            record.Transaction_Date=$vm.date_to_string_dmy(new Date(record.Transaction_Date));
+            //record.Transaction_Date=$vm.date_to_string_dmy(new Date(record.Transaction_Date));
             dbv.DT1=record.Transaction_Date;
             dbv.V1='0'; if(record.Debit!='')   dbv.V1=record.Debit;
             dbv.V2='0'; if(record.Credit!='')  dbv.V2=record.Credit;
