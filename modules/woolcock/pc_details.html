@@ -1,0 +1,77 @@
+<section>
+      VmInclude:__BASE__/vmiis/Common-Code/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        _fields="_Form,PC_Name,IP_Address,Mac_Address,Net_Mask,Default_Gateway,DNS1,DNS2,Room,Level,Model,OS,Name,Login,Unikey,Phone,Additional_Information";
+        _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete";
+        //-------------------------------------
+        VmInclude:__BASE__/vmiis/Common-Code/grid/grid.js
+        VmInclude:__BASE__/vmiis/Common-Code/style/ease-in-out.js
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data(); })
+        //-------------------------------------
+
+       //-------------------------------------
+       _cell_render=function(records,I,field,td,set_value,source){
+           switch(field){
+               case 'Net_Mask':
+                   records[I].vm_custom[field]=true;
+                   var html="<select style='border:0;'>"
+                   html+="<option>255.255.255.0</option>";
+                   html+="<option>255.255.255.224</option>";
+                   html+="</select>"
+
+                   VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                   break;
+
+                case 'Default_Gateway':
+                       records[I].vm_custom[field]=true;
+                       var html="<select style='border:0;'>"
+                       html+="<option>172.17.213.254</option>";
+                       html+="<option>172.21.135.254</option>";
+                       html+="<option>129.78.134.62</option>";
+                       html+="<option>192.168.1.1</option>";
+                       html+="</select>"
+
+                       VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                       break;
+                 case 'DNS1':
+                       records[I].vm_custom[field]=true;
+                       var html="<select style='border:0;'>"
+                       html+="<option>172.17.213.2</option>";
+                       html+="<option>172.17.213.3</option>";
+                       html+="</select>"
+
+                       VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                       break;
+                   case 'DNS2':
+                       records[I].vm_custom[field]=true;
+                       var html="<select style='border:0;'>"
+                       html+="<option>172.17.213.2</option>";
+                       html+="<option>172.17.213.3</option>";
+                       html+="</select>"
+
+                       VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                       break;
+                   case 'OS':
+                       records[I].vm_custom[field]=true;
+                       var html="<select style='border:0;'>"
+                       html+="<option>Windows 7</option>";
+                       html+="<option>Windows 10</option>";
+                       html+="<option>Windows 2003</option>";
+                       html+="<option>Windows 2008</option>";
+                       html+="<option>Windows 2012R2</option>";
+                       html+="<option>Mac</option>";
+                       html+="<option>Linux</option>";
+                       html+="</select>"
+                       VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                       break;
+                   }
+               }
+    }
+</script>
+<style>
+    VmInclude:__BASE__/vmiis/Common-Code/grid/grid.css
+    </style>
